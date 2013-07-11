@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'em-websocket'
 require 'yajl'
-require 'haml'
+require 'slim'
 require 'sinatra/base'
 require 'thin'
 
@@ -11,7 +11,7 @@ EventMachine.run do
   class App < Sinatra::Base
 
       get '/' do
-          haml :index
+          slim :index
       end
 
       post '/' do
