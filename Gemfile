@@ -1,6 +1,6 @@
 source "http://rubygems.org"
 
-gem "haml"
+gem "slim"
 gem "yajl-ruby"
 gem "thin"
 gem "sinatra"
