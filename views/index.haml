@@ -1,25 +1,22 @@
 !!!
-%html{:lang => "en"}
+%html{lang: "en"}
   %head
-    %link{:href => "/css/bootstrap.css", :rel => "stylesheet"}
+    %meta{charset: "utf-8"}
+    %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
+    %title Sinatra Chat
+    %link{href: "/css/style.css", rel: "stylesheet"}
   %body
-    .navbar
-      .navbar-inner
-        .container
-          .brand
-            Sinatra Chat
-    .container
-      %form.form-stacked
-        .form-actions
-          .control-group
-            %input#msg.input-xlarge{:placeholder => "Type something…", :type => "text"}
-          %div
-            %input#send.btn{:type => "submit", :value => "Send"}
-            %input#clear.btn{:type => "button", :value => "Clear Chat"}
-      %table#chat.table
+    %header
+      %h1 Sinatra Chat
+
+    %main
+      %form#chat-form
+        .field
+          %input#msg{type: "text", placeholder: "Type a message…", autocomplete: "off", required: true}
+        %button#send{type: "submit"} Send
+        %button#clear{type: "button"} Clear
+
+      %table#chat
         %tbody
-          %tr
-            %td
-    %script{:src => "http://code.jquery.com/jquery-1.7.2.min.js"}
-    %script{:src => "/js/bootstrap.js"}
-    %script{:src => "/js/app.js"}
+
+    %script{src: "/js/app.js"}

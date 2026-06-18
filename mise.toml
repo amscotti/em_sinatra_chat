@@ -1,0 +1,5 @@
+[tools]
+# Ruby 4.0.5 is the latest stable Ruby but doesn't build on this machine
+# (rdoc segfaults under Rosetta). 4.0.0 is the latest 4.x that builds cleanly.
+# Switch to 4.0.5 once the upstream rdoc-on-Apple-Silicon issue is resolved.
+ruby = "4.0.0"

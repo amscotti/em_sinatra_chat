@@ -1,1 +1,21 @@
 .DS_Store
+
+# Ruby / Bundler
+*.gem
+.bundle/
+vendor/bundle/
+.ruby-version
+.ruby-gemset
+
+# Mise
+.mise.local.toml
+.mise.local.lock
+
+# Logs
+*.log
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
